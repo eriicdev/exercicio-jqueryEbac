@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Lista de tarefas</h1>
+    </header>
+    <div class="container">
+        <div>
+            <h2>Adicione uma tarefa</h2>
+        </div>
+        <section>
+            <form>
+                <div class="inputs">
+                    <input type="text" id="inserir-tarefa" required placeholder="Digite a tarefa">
+                    <label for="data-tarefa"><h3>Horário:</h3></label>
+                    <input type="time" id="data-tarefa">
+                </div>
+                <div class="botoes">
+                    <button type="submit" id="confirma">Adicionar</button>
+                    <button type="reset" id="reseta">Limpar Tudo</button>
+                </div>
+            </form>
+        </section>
+        <section class="Lista">
+            <h3>Tarefas a serem cumpridas</h3>
+            <ul id="listas-tarefas">
+                
+            </ul>
+        </section>
+    </div>
+    <footer>&copy; Erik Costa - EBAC</footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
